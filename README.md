@@ -23,7 +23,6 @@
             text-align: center;
         }
 
-        /* Snow Effect */
         .snowflakes {
             position: fixed;
             top: 0;
@@ -34,7 +33,6 @@
             z-index: 1000;
         }
 
-        /* Hero Section */
         header {
             height: 100vh;
             display: flex;
@@ -56,7 +54,6 @@
             animation: float 3s ease-in-out infinite;
         }
 
-        /* Sections */
         .container {
             max-width: 800px;
             margin: -50px auto 50px;
@@ -72,10 +69,9 @@
             line-height: 1.8;
             font-size: 1.1rem;
             color: #444;
-            white-space: pre-line; /* Preserves line breaks */
+            white-space: pre-line;
         }
 
-        /* Photo Grid */
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -106,7 +102,6 @@
             border-radius: 5px;
         }
 
-        /* NEW: Cherish Section */
         .cherish-banner {
             background: var(--primary-red);
             color: white;
@@ -114,26 +109,13 @@
             margin: 60px 0;
             font-family: 'Dancing Script', cursive;
             font-size: 2.5rem;
-            position: relative;
         }
 
-        .cherish-banner::before, .cherish-banner::after {
-            content: '✨';
-            margin: 0 20px;
-        }
-
-        /* NEW: Second Letter Style */
         .second-letter {
             margin-top: 20px;
             margin-bottom: 100px;
             border: 2px dashed var(--primary-red);
             background-color: #fff9f9;
-        }
-
-        .heart-divider {
-            color: var(--primary-red);
-            font-size: 1.5rem;
-            margin: 20px 0;
         }
 
         @keyframes float {
@@ -167,7 +149,7 @@
     <div class="snowflakes" id="snow"></div>
 
     <header>
-        <h1>Merry Christmas, Claire <span style="color:white;">❤️</span></h1>
+        <h1>Merry Christmas, Claire ❤️</h1>
         <p style="font-size: 1.5rem;">To my favorite person in the world</p>
     </header>
 
@@ -182,50 +164,34 @@
 
     <h2 style="font-family: 'Dancing Script', cursive; font-size: 3rem; color: var(--primary-red);">Our Best Moments</h2>
     
-    code
-    
     <div class="gallery">
-    <!-- First Photo -->
-    <div class="photo-card" style="--r: -3deg">
-        <img src="pic1.jpg" alt="Us"> 
-        <p>Roblox natin 🎮</p>
+        <div class="photo-card" style="--r: -3deg">
+            <img src="pic1.jpg" alt="Us"> 
+            <p>Roblox natin 🎮</p>
+        </div>
+        <div class="photo-card" style="--r: 2deg">
+            <img src="pic2.jpg" alt="Us">
+            <p>Our favorite date ☕</p>
+        </div>
+        <div class="photo-card" style="--r: -1deg">
+            <img src="pic3.jpg" alt="Us">
+            <p>Happy Times ✨</p>
+        </div>
     </div>
 
-    <!-- Second Photo -->
-    <div class="photo-card" style="--r: 2deg">
-        <img src="pic2.jpg" alt="Us">
-        <p>Our favorite date ☕</p>
-    </div>
-
-    <!-- Third Photo -->
-    <div class="photo-card" style="--r: -1deg">
-        <img src="pic3.jpg" alt="Us">
-        <p>Happy Times ✨</p>
-    </div>
-    </div>
-
-    <!-- NEW CONTENT STARTS HERE -->
-    
     <div class="cherish-banner">
         Every single memory we've shared is a treasure I will cherish forever.
     </div>
 
     <div class="container second-letter">
-        <div class="heart-divider">❤️ ❤️ ❤️</div>
         <h2 style="font-family: 'Dancing Script', cursive; font-size: 2.5rem; color: var(--primary-red);">One More Thing...</h2>
         <div class="letter-text">
             <p>Looking at these photos and thinking about our time together makes me realize how much you mean to me. Beyond the gifts and the Christmas lights, the best part of my year has always been you.</p>
-            
-            <p>Kahit anong mangyari, I want you to know that I appreciate every little thing you do. Your smile is my favorite Christmas gift, and your happiness is my priority. I promise to make even more memories with you that are worth keeping forever.</p>
-            
+            <p>Kahit anong mangyari, I want you to know that I appreciate every little thing you do. Your smile is my favorite Christmas gift.</p>
             <p>You are my home, Claire. Hinding-hindi magbabago yun.</p>
-            
             <p><strong>Always yours,<br>Matmat</strong></p>
         </div>
-        <div class="heart-divider">❤️ ❤️ ❤️</div>
     </div>
-
-    <!-- NEW CONTENT ENDS HERE -->
 
     <footer>
         Merry Christmas, Claire ko! 🎄
@@ -241,14 +207,9 @@
             flake.style.animationDuration = Math.random() * 3 + 2 + 's';
             flake.style.opacity = Math.random();
             flake.style.fontSize = Math.random() * 10 + 10 + 'px';
-            
             snow.appendChild(flake);
-
-            setTimeout(() => {
-                flake.remove();
-            }, 5000);
+            setTimeout(() => { flake.remove(); }, 5000);
         }
-
         setInterval(createSnowflake, 100);
     </script>
 </body>
