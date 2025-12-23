@@ -184,7 +184,7 @@
     
     code
     
-<div class="gallery">
+    <div class="gallery">
     <!-- First Photo -->
     <div class="photo-card" style="--r: -3deg">
         <img src="pic1.jpg" alt="Us"> 
@@ -202,7 +202,7 @@
         <img src="pic3.jpg" alt="Us">
         <p>Happy Times ✨</p>
     </div>
-</div>
+    </div>
 
     <!-- NEW CONTENT STARTS HERE -->
     
