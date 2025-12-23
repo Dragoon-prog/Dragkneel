@@ -182,20 +182,27 @@
 
     <h2 style="font-family: 'Dancing Script', cursive; font-size: 3rem; color: var(--primary-red);">Our Best Moments</h2>
     
-    <div class="gallery">
-        <div class="photo-card" style="--r: -3deg">
-            <img src="https://via.placeholder.com/300x400?text=Roblox+Photo" alt="Us">
-            <p>Roblox natin 🎮</p>
-        </div>
-        <div class="photo-card" style="--r: 2deg">
-            <img src="https://via.placeholder.com/300x400?text=Date+Photo" alt="Us">
-            <p> The one that made me kilig so much ☕</p>
-        </div>
-        <div class="photo-card" style="--r: -1deg">
-            <img src="https://via.placeholder.com/300x400?text=Happy+Times" alt="Us">
-            <p>Happy Times ✨</p>
-        </div>
+    code
+    
+<div class="gallery">
+    <!-- First Photo -->
+    <div class="photo-card" style="--r: -3deg">
+        <img src="pic1.jpg" alt="Us"> 
+        <p>Roblox natin 🎮</p>
     </div>
+
+    <!-- Second Photo -->
+    <div class="photo-card" style="--r: 2deg">
+        <img src="pic2.jpg" alt="Us">
+        <p>Our favorite date ☕</p>
+    </div>
+
+    <!-- Third Photo -->
+    <div class="photo-card" style="--r: -1deg">
+        <img src="pic3.jpg" alt="Us">
+        <p>Happy Times ✨</p>
+    </div>
+</div>
 
     <!-- NEW CONTENT STARTS HERE -->
     
