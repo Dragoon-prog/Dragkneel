@@ -174,7 +174,7 @@
     <div class="container">
         <h2 style="font-family: 'Dancing Script', cursive; font-size: 3rem; color: var(--primary-red);">My Dearest Claire,</h2>
         <div class="letter-text">
-            <p>I wanted to make something special for you this Christmas para kahit papaano mapasaya kahit sa pasko mo. You make every day feel like a holiday just by being in it. Thank you for your love, your presence, and for being the beautiful person you are.</p>
+            <p>I wanted to make something special for you this Christmas para kahit papaano mapasaya kita sa pasko mo. You make every day feel like a holiday just by being in it. Thank you for your love, your presence, and for being the beautiful person you are.</p>
             <p>This is just a small digital corner to remind you how much I Love you. I can't wait to spend many more Christmases with you.</p>
             <p><strong>Love, Baby matmat mo.</strong></p>
         </div>
@@ -189,7 +189,7 @@
         </div>
         <div class="photo-card" style="--r: 2deg">
             <img src="https://via.placeholder.com/300x400?text=Date+Photo" alt="Us">
-            <p>Our favorite date ☕</p>
+            <p> The one that made me kilig so much ☕</p>
         </div>
         <div class="photo-card" style="--r: -1deg">
             <img src="https://via.placeholder.com/300x400?text=Happy+Times" alt="Us">
