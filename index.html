@@ -23,6 +23,7 @@
             text-align: center;
         }
 
+        /* Snow Effect */
         .snowflakes {
             position: fixed;
             top: 0;
@@ -33,6 +34,7 @@
             z-index: 1000;
         }
 
+        /* Hero Section */
         header {
             height: 100vh;
             display: flex;
@@ -54,6 +56,7 @@
             animation: float 3s ease-in-out infinite;
         }
 
+        /* Sections */
         .container {
             max-width: 800px;
             margin: -50px auto 50px;
@@ -72,6 +75,7 @@
             white-space: pre-line;
         }
 
+        /* Photo Grid */
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -102,6 +106,7 @@
             border-radius: 5px;
         }
 
+        /* Cherish Section */
         .cherish-banner {
             background: var(--primary-red);
             color: white;
@@ -109,8 +114,10 @@
             margin: 60px 0;
             font-family: 'Dancing Script', cursive;
             font-size: 2.5rem;
+            position: relative;
         }
 
+        /* Second Letter Style */
         .second-letter {
             margin-top: 20px;
             margin-bottom: 100px;
@@ -165,16 +172,21 @@
     <h2 style="font-family: 'Dancing Script', cursive; font-size: 3rem; color: var(--primary-red);">Our Best Moments</h2>
     
     <div class="gallery">
+        <!-- Photo 1: Matches Pic1.jpg -->
         <div class="photo-card" style="--r: -3deg">
             <img src="Pic1.jpg" alt="Us"> 
             <p>Roblox natin 🎮</p>
         </div>
+
+        <!-- Photo 2: Matches Pic2.jpg -->
         <div class="photo-card" style="--r: 2deg">
             <img src="Pic2.jpg" alt="Us">
             <p>Our favorite date ☕</p>
         </div>
+
+        <!-- Photo 3: Matches pic3.jpg (lowercase) -->
         <div class="photo-card" style="--r: -1deg">
-            <img src="Pic3.jpg" alt="Us">
+            <img src="pic3.jpg" alt="Us">
             <p>Happy Times ✨</p>
         </div>
     </div>
@@ -207,9 +219,14 @@
             flake.style.animationDuration = Math.random() * 3 + 2 + 's';
             flake.style.opacity = Math.random();
             flake.style.fontSize = Math.random() * 10 + 10 + 'px';
+            
             snow.appendChild(flake);
-            setTimeout(() => { flake.remove(); }, 5000);
+
+            setTimeout(() => {
+                flake.remove();
+            }, 5000);
         }
+
         setInterval(createSnowflake, 100);
     </script>
 </body>
