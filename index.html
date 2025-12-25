@@ -24,7 +24,6 @@
             text-align: center;
         }
 
-        /* Snow Effect */
         .snowflakes {
             position: fixed;
             top: 0;
@@ -35,7 +34,6 @@
             z-index: 1000;
         }
 
-        /* Hero Section */
         header {
             height: 100vh;
             display: flex;
@@ -53,12 +51,11 @@
 
         h1 {
             font-family: 'Dancing Script', cursive;
-            font-size: clamp(3rem, 10vw, 5rem); /* Responsive size */
+            font-size: clamp(3rem, 10vw, 5rem);
             margin-bottom: 10px;
             animation: float 3s ease-in-out infinite;
         }
 
-        /* Sections */
         .container {
             max-width: 700px;
             margin: -60px auto 60px;
@@ -87,7 +84,6 @@
             margin: 20px 0;
         }
 
-        /* Photo Grid */
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -100,7 +96,7 @@
         .photo-card {
             background: var(--white);
             padding: 12px;
-            border-radius: 4px; /* Polaroid style */
+            border-radius: 4px;
             box-shadow: 0 8px 20px rgba(0,0,0,0.1);
             transform: rotate(var(--r));
             transition: all 0.4s ease;
@@ -126,7 +122,6 @@
             color: #333;
         }
 
-        /* Cherish Section */
         .cherish-banner {
             background: var(--primary-red);
             color: var(--white);
@@ -134,10 +129,8 @@
             margin: 80px 0;
             font-family: 'Dancing Script', cursive;
             font-size: clamp(1.8rem, 5vw, 2.8rem);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
 
-        /* Second Letter */
         .second-letter {
             margin-top: 20px;
             margin-bottom: 100px;
@@ -170,18 +163,10 @@
             to { transform: translateY(100vh); }
         }
 
-        /* Mobile Adjustments */
         @media (max-width: 600px) {
-            .container {
-                margin: -40px 15px 40px 15px;
-                padding: 30px 20px;
-            }
-            .gallery {
-                grid-template-columns: 1fr;
-            }
-            .photo-card img {
-                height: 300px;
-            }
+            .container { margin: -40px 15px 40px 15px; padding: 30px 20px; }
+            .gallery { grid-template-columns: 1fr; }
+            .photo-card img { height: 300px; }
         }
     </style>
 </head>
@@ -198,9 +183,7 @@
         <h2 style="font-family: 'Dancing Script', cursive; font-size: 3rem; color: var(--primary-red); margin-top: 0;">My Dearest Claire,</h2>
         <div class="letter-text">
             <p>I wanted to make something special for you this Christmas para kahit papaano mapasaya kita sa pasko mo. You make every day feel like a holiday just by being in it. Thank you for your love, your presence, and for being the beautiful person you are.</p>
-            
             <p>This is just a small digital corner to remind you how much I Love you. I can't wait to spend many more Christmases with you.</p>
-            
             <p style="text-align: right; font-weight: 600; color: var(--primary-red);">Love, Baby matmat mo.</p>
         </div>
     </div>
@@ -222,6 +205,18 @@
             <img src="pic3.jpg" alt="Us">
             <p>Happy Times ✨</p>
         </div>
+
+        <!-- NEW PICTURE 4 -->
+        <div class="photo-card" style="--r: 2deg">
+            <img src="Pic4.jpg" alt="Us">
+            <p>Memorable Moment 📸</p>
+        </div>
+
+        <!-- NEW PICTURE 5 -->
+        <div class="photo-card" style="--r: -3deg">
+            <img src="Pic5.jpg" alt="Us">
+            <p>My Favorite View ❤️</p>
+        </div>
     </div>
 
     <div class="cherish-banner">
@@ -232,13 +227,9 @@
         <h2 style="font-family: 'Dancing Script', cursive; font-size: 2.5rem; color: var(--primary-red); margin-top: 0;">One More Thing...</h2>
         <div class="letter-text">
             <p>Looking at these photos and thinking about our time together makes me realize how much you mean to me. Beyond the gifts and the Christmas lights, the best part of my year has always been you.</p>
-            
             <p>Even through hardship, the ups and downs, ikaw lang talaga pipiliin ko. Kahit anong mangyari, I want you to know that I appreciate every little thing you do. Your presence is my favorite Christmas gift.</p>
-            
             <span class="bisaya-phrase">Hinay hinay tika higugmaon..</span>
-            
             <p>You are my home, Baby Claire ko. Hinding-hindi magbabago yun.</p>
-            
             <p style="text-align: right; font-weight: 600; color: var(--primary-red);">Always yours,<br>Matmat</p>
         </div>
     </div>
@@ -257,14 +248,9 @@
             flake.style.animationDuration = Math.random() * 3 + 2 + 's';
             flake.style.opacity = Math.random();
             flake.style.fontSize = Math.random() * 10 + 10 + 'px';
-            
             snow.appendChild(flake);
-
-            setTimeout(() => {
-                flake.remove();
-            }, 5000);
+            setTimeout(() => { flake.remove(); }, 5000);
         }
-
         setInterval(createSnowflake, 100);
     </script>
 </body>
